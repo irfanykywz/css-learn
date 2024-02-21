@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - border</title>
+
+	<style>
+		/*		
+		property border digunakan untuk memberi garis pada element
+		property border-radius digunakan untuk melengkungkan garis tepi pada elemen
+		property box-sizing digunakan untuk membuat element memiliki size yang sama walau margin dan paddingnya berbeda
+		value yang bisa dipakai
+		- px
+		- em
+		*/
+		.box {
+			width:200px;
+			height:200px;
+			background: black;
+			display:inline-block;
+			color:white;
+			margin:3px;
+			box-sizing: border-box;
+		}
+
+		.solid {
+			border: 0.3em solid red;
+		}
+
+		.dashed {
+			border: 0.3em dashed red;
+		}
+
+		.double {
+			border: 0.3em double red;
+		}
+
+		.dotted {
+			border: 0.3em dotted red;
+		}
+
+		.groove {
+			border: 0.3em groove red;
+		}
+		.inset {
+			border: 0.3em inset red;
+		}
+		.outset {
+			border: 0.3em outset red;
+		}
+		.ridge {
+			border: 0.3em ridge red;
+		}
+
+
+		.bs-3 {
+			border-left: 10px double red;
+		}
+		.be-3 {
+			border-right: 10px double red;
+		}
+		.bt-3 {
+			border-top: 10px double red;
+		}
+		.bb-3 {
+			border-bottom: 10px double red;
+		}	
+
+		.radius-5 {
+			border-radius: 5em;
+		}
+
+		.radius-custom {
+			border-radius: 5em 4em 3em 2em;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box solid">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box dashed">Lorem ipsum dolor sit, amet consectetur adipisicing, elit</div>
+	<div class="box double">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+	<div class="box dotted">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+	<div class="box groove">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+	<div class="box inset">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+	<div class="box outset">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+	<div class="box ridge">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="box bs-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box be-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box bt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box bb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="box radius-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box radius-custom">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+
+</body>
+</html>

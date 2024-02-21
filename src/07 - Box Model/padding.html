@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - padding</title>
+
+	<style>
+		/*		
+		property padding digunakan untuk memberi jarak kedalam element
+
+		padding bisa menggunakan nilai negatif
+
+		value yang bisa dipakai
+		- px
+		- %
+		- auto
+		*/
+		.box {
+			width:200px;
+			height:200px;
+			background: black;
+			display:inline-block;
+			color:white;
+		}
+
+		.p-3 {
+			padding: 3em;
+		}
+
+		.p-4 {
+			padding: 4em;
+		}
+
+		.p-5 {
+			padding: 5em;
+		}
+
+		.p-min-5 {
+			padding: -30px;
+		}
+
+		.ps-3 {
+			padding-left: 3em;
+		}
+		.pe-3 {
+			padding-right: 3em;
+		}
+		.pt-3 {
+			padding-top: 3em;
+		}
+		.pb-3 {
+			padding-bottom: 3em;
+		}
+		.px-3 {
+			padding: 0 3em;
+		}
+		.py-3 {
+			padding: 3em 0;
+		}		
+	</style>
+</head>
+<body>
+
+	<div class="box p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box p-4">Lorem ipsum dolor sit, amet consectetur adipisicing, elit</div>
+	<div class="box p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+	<div class="box p-3">Lorem ipsum dolor sit amet consectetur adipisicing, elit</div>
+	<div class="box p-min-5"></div>
+	<br>
+	<br>
+	<br>
+
+	<div class="box ps-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box pe-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box px-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+	<div class="box py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+
+</body>
+</html>

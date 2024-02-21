@@ -1,0 +1,19 @@
+inheritance berarti perawisan style css dari parent yang ada
+
+misalnya tag body memiliki style css sebagai berikut
+
+body {
+	color: lime
+}
+
+maka elemen yang berada ddialamnya akan mewariskan style pada body tersebut yaitu semua jenis tulisan akan menjadi hijau
+
+jika ingin menimpa (overide) style dari perawisannya maka tinggal buat specifict untuk elemen yang ada
+
+misalnya 
+
+p {
+	color: blue
+}
+
+maka warna yang berada didalam tag p akan menjadi warna biru, walaupun di tag body sudah ada warnanya...

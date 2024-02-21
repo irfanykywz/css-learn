@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - specifict</title>
+</head>
+<body>
+
+	<!--  
+	css selector specifict yaitu selector bisa digunakan lebih spesifik lagi dengan cara menambahkan identifier lain dengan spasi
+
+	selain itu specifict pada css juga berpengaruh jika banyak style yang diaplikasikan
+	katakanlah ada 2 css yang sama namun memiliki jenis selector yang berda
+
+	maka dari ke 2 css tersebut hanya akan memilih salah satunya saja
+
+	untuk menghitung spesifict css yang ada yaitu dimulai dari
+	- inline = 1000
+	- id = 100
+	- class = 10
+	- element = 1
+-->
+
+
+<style>
+	body p {
+		color: blue;
+	}
+
+	body p .highlight {
+		font-weight: bold;
+	}
+
+	body p .highlight .italic {
+		font-style: italic;
+	}
+</style>
+
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nobis fugit reiciendis in hic pariatur magni minima accusamus, <span class="highlight">deserunt sed rerum. Vitae expedita, accusantium soluta cupiditate neque, <span class="italic">assumenda odio ipsam!</span></span>
+</p>
+
+</body>
+</html>

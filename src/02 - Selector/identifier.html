@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - identifier</title>
+</head>
+<body>
+
+	<!--  
+
+	identifier pada css dibagi menjadi 2 yaitu id dan class
+
+	// id
+	- id hanya boleh ada pada 1 elemen saja 
+	- id menggunakan # sebagai identifier
+
+	// class
+	- class boleh lebih dari 1 elemen artinya bisa digunakan ulang
+	- class menggunakan . sebagai identifier di css
+
+	selain itu class juga bisa digunakan lebih dari satu
+-->
+
+
+<style>
+	#unique {
+		color: red;
+	}
+	.reuse-green {
+		color: green;
+	}
+
+	.reuse-bold {
+		font-weight: bold;
+	}
+</style>
+
+<div id="unique">
+	i em unique id
+</div>
+
+<div class="reuse-green">
+	i em reusable class
+</div>
+
+<div class="reuse-green reuse-bold">
+	i em reusable class
+</div>
+
+</body>
+</html>

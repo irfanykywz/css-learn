@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - float</title>
+
+	<style type="text/css">
+
+		/**	
+		 * float digunakan untuk memindahkan elemen kekiri maupun kekanan
+		 * saat menggunakan fungsi float wajib untuk me-reset fungsinya 
+		 * agar tidak berjalan ke elemen setelahnya menggunakan clear:both
+		 * 
+		 * selain menggunakan clear:both bisa juga menggunakan div kosong atau dengan css micro clearfix
+		 * https://nicolasgallagher.com/micro-clearfix-hack/
+		 */
+		.size {
+			width: 200px;
+			height: 200px;
+		}
+
+		.red {
+			background: red;
+			float: left;
+		}
+
+		.green {
+			background: green;
+			float: left;
+		}
+
+		.blue {
+			background: blue;
+			float: left;
+		}
+
+		.container {
+			border: 1px solid #333;
+			padding: 10px;
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">		
+
+
+		<div class="size red"></div>
+		<div class="size green"></div>
+		<div class="size blue"></div>
+
+		<!-- clear digunakan untuk mereset float agar tidak terus-terusan berjalan -->
+		<div class="clear"></div>
+	</div>
+
+</body>
+</html>

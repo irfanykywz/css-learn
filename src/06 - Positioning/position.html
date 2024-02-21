@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - iternal</title>
+
+	<style type="text/css">
+		/*
+		position digunakan untuk mengatur element agar bisa diposisi tertentu, mirip seperti melakukan layering pada tiap elemen yang ada jadi elemen bisa saling bertumpukan satu dengan lainnya...
+
+		posisi yang bisa digunakan yaitu
+		- relative
+		- absolute
+		- fixed
+		- static		
+		*/
+
+		body{
+			height: 2000px;
+		}
+
+
+		/*
+		jika terdapat elemen absolute didalam elemen relative 
+		maka akan elemen absolute akan mengikuti ukuran elemen relative
+		*/
+		div.relative {
+			position:relative;
+			width: 400px;
+			height: 400px;
+			background: green;
+		}
+		/* 
+		jika element absolute tidak memiliki parent relative 
+		maka dia akan mengikuti ukuran browser
+		*/
+		div.absolute {
+			position:absolute;
+			width: 200px;
+			height: 200px;
+			background: blue;
+			bottom: 0;
+			right: 0;
+		}
+
+
+		/* 
+		elemen fixed akan selalu melayang tanpa terpengaruh oleh position lain
+	 	*/
+		div.fixed {
+			position:fixed;
+			bottom:0;
+			left: 0;
+			right: 0;
+
+			/* styling */
+			color: black;
+			text-align: center;
+			background: lime;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="relative">
+		<div class="absolute">
+		</div>
+	</div>
+
+	<div class="absolute">
+	</div>
+
+	<div class="fixed">
+		ini adalah elemen fixed
+	</div>
+
+</body>
+</html>

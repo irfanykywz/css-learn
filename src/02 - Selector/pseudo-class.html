@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - identifier</title>
+</head>
+<body>
+
+	<!--  
+	pseudo class pada css digunakan untuk menangani keadaan tertentu dari sebuah elemen
+
+	pseudo class ada yang hanya khusus untuk tag tertentu dan ada juga untuk selector
+
+	pseudo hanya berlaku untuk tag a saja
+	:visited
+	:link
+
+	pseudo berlaku untuk semua tag
+	:hover
+	:active
+
+	pseudo untuk selector 
+	:first-child
+	:last-child
+	:nth-child(n)
+	:nth-of-type(n)
+	:first-of-type
+	:last-of-type
+
+
+-->
+
+
+<style>
+	#unique {
+		color: red;
+	}
+	#unique:hover {
+		color: lime;
+	}
+	#unique:active {
+		color: blue;
+	}
+	.reuse-green {
+		color: green;
+	}
+
+	.reuse-bold {
+		font-weight: bold;
+	}
+</style>
+
+<div id="unique">
+	i em unique id
+</div>
+
+<div class="reuse-green">
+	i em reusable class
+</div>
+
+<div class="reuse-green reuse-bold">
+	i em reusable class
+</div>
+
+</body>
+</html>

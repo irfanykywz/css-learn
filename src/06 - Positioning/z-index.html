@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn css - z-index</title>
+
+	<style type="text/css">
+
+		/**	
+		 * z-index digunakan untuk memprioritaskan element ketika dalam posisi melayang (fixed / absolute)
+		 * index yang lebih besar akan diprioritaskan pertama sampai index terkecil
+		 */
+		div {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+
+		.red {
+			background: red;
+			z-index: 99;
+		}
+
+		.green {
+			background: green;
+			z-index: 2;
+			left:100px;
+		}
+
+		.blue {
+			background: blue;
+			z-index: 3;
+			left:50px;
+			top:100px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+
+</body>
+</html>
