@@ -1,25 +1,16 @@
-README.md
+# Learn CSS
+piece of code what i learn from css
 
-overflow
-display
+# Tracking
 
+22 Februari 2024
+- re-learning
 
-width
-height
-
-
-
-
-@font-face	
-
-position
-	sticky
+```
+sebenarnya sudah lama belajarnya cuma dirapihin ulang aja...
+```
 
 
-display
-- Beberapa elemen HTML yang memiliki display block sebagai default : h1-h6, div, p, ul, li, ol, form, hr.
-
-
-## Resource
+# Resource
 - https://htmlcolorcodes.com/ 
 - https://cssgradient.io/
